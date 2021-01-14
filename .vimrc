@@ -33,7 +33,7 @@ nnoremap <Space><Space><Space> :1,$s/\t/    /g
 :au BufEnter,BufNew,BufNewFile *.py inoremap :<CR> :<CR><Tab>
 " autoclose html tags mapping
 :set omnifunc=htmlcomplete#CompleteTags
-:au FileType html,xml,xsl inoremap <C-_> <Right><Enter></<C-x><C-o><Esc>O<Tab>|map <C-_> a<C-_>
+:au FileType html,xml,xsl inoremap <C-_> <Right><Enter></<C-x><C-o><Esc>O<Tab>|map <C-_> a<C-_>|inoremap <C-_><C-_> <Right></<C-x><C-o>
 
 
 " colorscheme and config
