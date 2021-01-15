@@ -100,7 +100,8 @@ highlight Directory ctermfg=21 cterm=bold
 highlight Search ctermfg=16 ctermbg=51 cterm=none
 highlight Visual ctermbg=59 cterm=none
 highlight WildMenu ctermfg=231 cterm=none
-highlight CursorLine ctermbg=242 cterm=bold
+highlight CursorLine ctermbg=105 cterm=bold¬
+highlight CursorColumn ctermbg=105 cterm=bold
 highlight LineNr cterm=bold ctermbg=21 ctermfg=226
 highlight NonText ctermfg=240
 " Pmenu
