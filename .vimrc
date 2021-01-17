@@ -102,7 +102,7 @@ highlight Visual ctermbg=59 cterm=none
 highlight WildMenu ctermfg=231 cterm=none
 highlight CursorLine ctermbg=238 cterm=bold
 highlight CursorColumn ctermbg=238 cterm=bold
-highlight LineNr cterm=bold ctermbg=226 ctermfg=21
+highlight LineNr cterm=bold ctermbg=46 ctermfg=21
 highlight NonText ctermfg=240
 highlight ExtraText ctermfg=196 cterm=none " Created by me
 " Pmenu
