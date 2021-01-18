@@ -59,8 +59,8 @@ highlight Boolean ctermfg=226 cterm=none
 highlight String ctermfg=226 cterm=none
 highlight Character ctermfg=226 cterm=none
 " Variables and Functions
-highlight Identifier ctermfg=196 cterm=none
-highlight Function ctermfg=196 cterm=none
+highlight Identifier ctermfg=51 cterm=none
+highlight Function ctermfg=51 cterm=none
 " Code
 highlight Statement ctermfg=21 cterm=none
 highlight Conditional ctermfg=21 cterm=none
@@ -70,23 +70,23 @@ highlight Operator ctermfg=21 cterm=none
 highlight Keyword ctermfg=21 cterm=none
 highlight Exception ctermfg=21 cterm=none
 " Pre processed code
-highlight PreProc ctermfg=196 cterm=none
-highlight Include ctermfg=196 cterm=none
-highlight Define ctermfg=196 cterm=none
-highlight Macro ctermfg=196 cterm=none
-highlight Precondit ctermfg=196 cterm=none
+highlight PreProc ctermfg=51 cterm=none
+highlight Include ctermfg=51 cterm=none
+highlight Define ctermfg=51 cterm=none
+highlight Macro ctermfg=51 cterm=none
+highlight Precondit ctermfg=51 cterm=none
 " Classes and Structures
-highlight Type ctermfg=196 cterm=none
-highlight StorageClass ctermfg=196 cterm=none
-highlight Structure ctermfg=196 cterm=none
-highlight Typedef ctermfg=196 cterm=none
+highlight Type ctermfg=51 cterm=none
+highlight StorageClass ctermfg=51 cterm=none
+highlight Structure ctermfg=51 cterm=none
+highlight Typedef ctermfg=51 cterm=none
 " Special Text
-highlight Special ctermfg=196 cterm=none
-highlight SpecialChar ctermfg=196 cterm=none
-highlight Tag ctermfg=196 cterm=none
-highlight Delimiter ctermfg=196 cterm=none
-highlight SpecialComment ctermfg=196 cterm=none
-highlight Debug ctermfg=196 cterm=none
+highlight Special ctermfg=51 cterm=none
+highlight SpecialChar ctermfg=51 cterm=none
+highlight Tag ctermfg=51 cterm=none
+highlight Delimiter ctermfg=51 cterm=none
+highlight SpecialComment ctermfg=51 cterm=none
+highlight Debug ctermfg=51 cterm=none
 " Others
 highlight Underlined ctermfg=93 cterm=none
 highlight Ignore ctermfg=21 cterm=none
@@ -104,7 +104,7 @@ highlight CursorLine ctermbg=238 cterm=bold
 highlight CursorColumn ctermbg=238 cterm=bold
 highlight LineNr cterm=bold ctermbg=226 ctermfg=21
 highlight NonText ctermfg=240 cterm=none
-highlight ExtraText ctermfg=51 cterm=none " Created by me
+highlight ExtraText ctermfg=196 cterm=none " Created by me
 " Pmenu
 highlight Pmenu ctermfg=16 ctermbg=46 cterm=bold
 highlight PmenuSel ctermfg=16 ctermbg=21 cterm=bold
