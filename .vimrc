@@ -1,55 +1,97 @@
 " Key Bindings
 " Mappings for brackets and quotes
 " Commands starting with inoremap work only insert mode and commands starting with nnoremap work only in normal mode in vim. 
-inoremap {<CR> {<CR>}<Esc>O<Tab>  " If you press { and newline character, then the it will get printed like this:- { \n \t | \n } where | represents the cursor.
-inoremap (<CR> (<CR>)<Esc>O<Tab>  " If you press ( and newline character, then the it will get printed like this:- ( \n \t | \n ) where | represents the cursor.
-inoremap [<CR> [<CR>]<Esc>O<Tab>  " If you press [ and newline character, then the it will get printed like this:- [ \n \t | \n ] where | represents the cursor.
-inoremap { {}<Left>  " If you press {, then the it will get printed like this:- {|} where | represents the cursor.
-inoremap ( ()<Left>  " If you press (, then the it will get printed like this:- (|) where | represents the cursor.
-inoremap [ []<Left>  " If you press [, then the it will get printed like this:- [|] where | represents the cursor.
-inoremap " ""<Left>  " If you press ", then the it will get printed like this:- "|" where | represents the cursor.
-inoremap ' ''<Left>  " If you press ', then the it will get printed like this:- '|' where | represents the cursor.
-inoremap ` ``<Left>  " If you press `, then the it will get printed like this:- `|` where | represents the cursor.
-inoremap < <><Left>  " If you press <, then the it will get printed like this:- `|` where | represents the cursor.
-inoremap </ </><Left>  " If you press </, then the it will get printed like this:- </|> where | represents the cursor.
-inoremap {<Space> {  " If you press {\s, then the it will get printed like this:- { where | represents the cursor.
-inoremap (<Space> (  " If you press (\s, then the it will get printed like this:- ( where | represents the cursor.
-inoremap [<Space> [  " If you press [\s, then the it will get printed like this:- [ where | represents the cursor.
-inoremap "<Space> "  " If you press "\s, then the it will get printed like this:- " where | represents the cursor.
-inoremap '<Space> '  " If you press '\s, then the it will get printed like this:- ' where | represents the cursor.
-inoremap `<Space> `  " If you press `\s, then the it will get printed like this:- ` where | represents the cursor.
-inoremap <<Space> <  " If you press <\s, then the it will get printed like this:- < where | represents the cursor.
-inoremap {} {}  " If you press {}, then it will get printed like this:- {}| where | represents the cursor.
-inoremap () ()  " If you press (), then it will get printed like this:- ()| where | represents the cursor.
-inoremap [] []  " If you press [], then it will get printed like this:- []| where | represents the cursor.
-inoremap "" ""  " If you press "", then it will get printed like this:- ""| where | represents the cursor.
-inoremap '' ''  " If you press '', then it will get printed like this:- ''| where | represents the cursor.
-inoremap `` ``  " If you press ``, then it will get printed like this:- ``| where | represents the cursor.
-inoremap <> <>  " If you press <>, then it will get printed like this:- <>| where | represents the cursor.
-inoremap </> </>  " If you press </>, then it will get printed like this:- </>| where | represents the cursor.
+inoremap {<CR> {<CR>}<Esc>O<Tab>  
+" If you press { and newline character, then the it will get printed like this:- { \n \t | \n } where | represents the cursor.
+inoremap (<CR> (<CR>)<Esc>O<Tab>  
+" If you press ( and newline character, then the it will get printed like this:- ( \n \t | \n ) where | represents the cursor.
+inoremap [<CR> [<CR>]<Esc>O<Tab>  
+" If you press [ and newline character, then the it will get printed like this:- [ \n \t | \n ] where | represents the cursor.
+inoremap { {}<Left>  
+" If you press {, then the it will get printed like this:- {|} where | represents the cursor.
+inoremap ( ()<Left>  
+" If you press (, then the it will get printed like this:- (|) where | represents the cursor.
+inoremap [ []<Left>  
+" If you press [, then the it will get printed like this:- [|] where | represents the cursor.
+inoremap " ""<Left>  
+" If you press ", then the it will get printed like this:- "|" where | represents the cursor.
+inoremap ' ''<Left>  
+" If you press ', then the it will get printed like this:- '|' where | represents the cursor.
+inoremap ` ``<Left>  
+" If you press `, then the it will get printed like this:- `|` where | represents the cursor.
+inoremap < <><Left>  
+" If you press <, then the it will get printed like this:- `|` where | represents the cursor.
+inoremap </ </><Left>  
+" If you press </, then the it will get printed like this:- </|> where | represents the cursor.
+inoremap {<Space> {  
+" If you press {\s, then the it will get printed like this:- { where | represents the cursor.
+inoremap (<Space> (  
+" If you press (\s, then the it will get printed like this:- ( where | represents the cursor.
+inoremap [<Space> [  
+" If you press [\s, then the it will get printed like this:- [ where | represents the cursor.
+inoremap "<Space> "  
+" If you press "\s, then the it will get printed like this:- " where | represents the cursor.
+inoremap '<Space> '  
+" If you press '\s, then the it will get printed like this:- ' where | represents the cursor.
+inoremap `<Space> `  
+" If you press `\s, then the it will get printed like this:- ` where | represents the cursor.
+inoremap <<Space> <  
+" If you press <\s, then the it will get printed like this:- < where | represents the cursor.
+inoremap {} {}  
+" If you press {}, then it will get printed like this:- {}| where | represents the cursor.
+inoremap () ()  
+" If you press (), then it will get printed like this:- ()| where | represents the cursor.
+inoremap [] []  
+" If you press [], then it will get printed like this:- []| where | represents the cursor.
+inoremap "" ""  
+" If you press "", then it will get printed like this:- ""| where | represents the cursor.
+inoremap '' ''  
+" If you press '', then it will get printed like this:- ''| where | represents the cursor.
+inoremap `` ``  
+" If you press ``, then it will get printed like this:- ``| where | represents the cursor.
+inoremap <> <>  
+" If you press <>, then it will get printed like this:- <>| where | represents the cursor.
+inoremap </> </>  
+" If you press </>, then it will get printed like this:- </>| where | represents the cursor.
 " Mappings for tabs and space conversions
 " To convert spaces to tabs you press tab three times and hit enter and to convert tabs to spaces, you press space three times and hit enter.
-nnoremap <Tab><Tab><Tab> :1,$s/    /\t/g  " Pressing tab three times in normal mode makes this command appear in command mode where you just have to change the number of spaces in this command to the spaces which you represent for each tab and hit enter.
-nnoremap <Space><Space><Space> :1,$s/\t/    /g  " Pressing space three times in normal mode makes this command appear in command mode where you just have to change the number of spaces in this command to the spaces which you represent for each tab and hit enter.
+nnoremap <Tab><Tab><Tab> :1,$s/    /\t/g  
+" Pressing tab three times in normal mode makes this command appear in command mode where you just have to change the number of spaces in this command to the spaces which you represent for each tab and hit enter.
+nnoremap <Space><Space><Space> :1,$s/\t/    /g  
+" Pressing space three times in normal mode makes this command appear in command mode where you just have to change the number of spaces in this command to the spaces which you represent for each tab and hit enter.
 " Filetype maps
-:au BufEnter,BufNew,BufNewFile *.py inoremap :<CR> :<CR><Tab>  " This is a auto-command which gets executed for python files automatically. If you press :\n, it will get printed like this:- :\n\t| where | represents the cursor.
+:au BufEnter,BufNew,BufNewFile *.py inoremap :<CR> :<CR><Tab>  
+" This is a auto-command which gets executed for python files automatically. If you press :\n, it will get printed like this:- :\n\t| where | represents the cursor.
 " autoclose html tags mapping
-:set omnifunc=htmlcomplete#CompleteTags  " This calls the builtin function to complete html tags.
-:au FileType html,xml,xsl inoremap <C-_> <Right><Enter></<C-x><C-o><Esc>O<Tab>|map <C-_> a<C-_>|inoremap <C-_><C-_> <Right></<C-x><C-o>  " If you type a html opening tag like the following <html>| or <html|> with the cursor represented by | and if the cursor is in those positions and if you hit <ctrl + _>, then it will get printed like this:- <html> \n \t | \n </html> where | represents the cursor.
+:set omnifunc=htmlcomplete#CompleteTags  
+" This calls the builtin function to complete html tags.
+:au FileType html,xml,xsl inoremap <C-_> <Right><Enter></<C-x><C-o><Esc>O<Tab>|map <C-_> a<C-_>|inoremap <C-_><C-_> <Right></<C-x><C-o>  
+" If you type a html opening tag like the following <html>| or <html|> with the cursor represented by | and if the cursor is in those positions and if you hit <ctrl + _>, then it will get printed like this:- <html> \n \t | \n </html> where | represents the cursor.
 
 
 " colorscheme and config
-set background=dark  " prefers dark colors for the text editor
-syntax on  " turns on color highlighting of the code
-syntax reset  " resets the colors for some of the highlight groups
-set number  " sets numberline for the text editor
-set cursorcolumn  " highlights the vertical line in which the cursor is.
-set cursorline  " highlights the horizontal line in which the cursor is.
-set hlsearch  " highlights all the words which match your regex.
-set list  " it is used to define invisible characters or characters which represent your tabs, spaces, trailing-lines,etc.
-set autoindent  " puts your cursor on the same indentation level as the before line
-set tabstop=4  " sets tabspace
-highlight clear  " clears all the highlighting set before.
+set background=dark  
+" prefers dark colors for the text editor
+syntax on  
+" turns on color highlighting of the code
+syntax reset  
+" resets the colors for some of the highlight groups
+set number  
+" sets numberline for the text editor
+set cursorcolumn  
+" highlights the vertical line in which the cursor is.
+set cursorline  
+" highlights the horizontal line in which the cursor is.
+set hlsearch  
+" highlights all the words which match your regex.
+set list  
+" it is used to define invisible characters or characters which represent your tabs, spaces, trailing-lines,etc.
+set autoindent  
+" puts your cursor on the same indentation level as the before line
+set tabstop=4  
+" sets tabspace
+highlight clear  
+" clears all the highlighting set before.
 " [See this link read all the matter under naming conventions category to know about highlight groups and which part of the code do they highlight](http://vimdoc.sourceforge.net/htmldoc/syntax.html)
 " [Also for changing colors, replace the numbers for cterfg and ctermbg if present with your favourite ones by referring to this link](https://jonasjacek.github.io/colors/)
 " Basic text
@@ -97,23 +139,31 @@ highlight Ignore ctermfg=21 cterm=none
 highlight Error ctermfg=231 ctermbg=196 cterm=none
 highlight Todo ctermfg=51 ctermbg=196 cterm=none
 " Vi-related
-highlight Cursor ctermfg=196 ctermbg=46 cterm=none  " This highlight group is to set color for your cursor altough the cursor color has to be set in your preferences tab in the terminal to change.
+highlight Cursor ctermfg=196 ctermbg=46 cterm=none  
+" This highlight group is to set color for your cursor altough the cursor color has to be set in your preferences tab in the terminal to change.
 highlight SpecialKey ctermfg=240 cterm=none
-highlight ErrorMsg ctermfg=231 ctermbg=196 cterm=none  " This highlight group is to set color for error messages.
+highlight ErrorMsg ctermfg=231 ctermbg=196 cterm=none  
+" This highlight group is to set color for error messages.
 highlight Directory ctermfg=21 cterm=bold
 highlight Search ctermfg=196 ctermbg=51 cterm=none
 highlight Visual ctermbg=59 cterm=none
 highlight WildMenu ctermfg=231 cterm=none
-highlight CursorLine ctermbg=238 cterm=bold  " This hightlight group is to set the color for highlighting horizontal line in which you cursor lies.
-highlight CursorColumn ctermbg=238 cterm=bold  " This highlight group is to set the color for highlighting vertical line in which your cursor lies.
-highlight LineNr cterm=bold ctermbg=226 ctermfg=21  " This highlight group is to set the color of linenumbering.
-highlight NonText ctermfg=240 cterm=none  " This highlight group is for setting colors to nontext or invisible characters which replace your tabs, spaces, trailing spaces,etc. 
-highlight ExtraText ctermfg=196 cterm=none " This highlight group is created by me to color all the special characters.
+highlight CursorLine ctermbg=238 cterm=bold  
+" This hightlight group is to set the color for highlighting horizontal line in which you cursor lies.
+highlight CursorColumn ctermbg=238 cterm=bold  
+" This highlight group is to set the color for highlighting vertical line in which your cursor lies.
+highlight LineNr cterm=bold ctermbg=226 ctermfg=21  
+" This highlight group is to set the color of linenumbering.
+highlight NonText ctermfg=240 cterm=none  
+" This highlight group is for setting colors to nontext or invisible characters which replace your tabs, spaces, trailing spaces,etc. 
+highlight ExtraText ctermfg=196 cterm=none 
+" This highlight group is created by me to color all the special characters.
 " Pmenu
 highlight Pmenu ctermfg=16 ctermbg=46 cterm=bold  
 highlight PmenuSel ctermfg=16 ctermbg=21 cterm=bold
 " Invisible Characters
-set listchars=eol:¬,tab:\|\·,trail:~,extends:>,precedes:<  " These are the characters which will replace your invisible characters like tabs spaces. Also if you want to represent all the spaces in your code with some character, you can replace this line with this code 'set listchars=eol:¬,tab:\|\·,trail:~,extends:>,precedes:<,space:~' and replace the space with whatever character you want.
+set listchars=eol:¬,tab:\|\·,trail:~,extends:>,precedes:<  
+" These are the characters which will replace your invisible characters like tabs spaces. Also if you want to represent all the spaces in your code with some character, you can replace this line with this code 'set listchars=eol:¬,tab:\|\·,trail:~,extends:>,precedes:<,space:~' and replace the space with whatever character you want.
 " Links
 highlight link TermCursor Cursor
 highlight link CursorIM Cursor
