@@ -55,9 +55,9 @@ inoremap </> </>
 " If you press </>, then it will get printed like this:- </>| where | represents the cursor.
 " Mappings for tabs and space conversions
 " To convert spaces to tabs you press tab three times and hit enter and to convert tabs to spaces, you press space three times and hit enter.
-nnoremap <Tab><Tab><Tab> :set noet\|retab!
+nnoremap <Tab><Tab><Tab> :set noet\|retab!<CR>
 " Pressing tab three times in normal mode makes this command appear in command mode where you just have to change the number of spaces in this command to the spaces which you represent for each tab and hit enter.
-nnoremap <Space><Space><Space> :set et\|retab
+nnoremap <Space><Space><Space> :set et\|retab<CR>
 " Pressing space three times in normal mode makes this command appear in command mode where you just have to change the number of spaces in this command to the spaces which you represent for each tab and hit enter
 nnoremap fr :1,$s/    /\t/g
 " search regex for special characters also
