@@ -93,14 +93,22 @@ syntax on
 " turns on color highlighting of the code
 syntax reset
 " resets the colors for some of the highlight groups
+set title
+" sets title
 set number
 " sets numberline for the text editor
+set laststatus=2
+" sets statusline
 set cursorcolumn
 " highlights the vertical line in which the cursor is.
 set cursorline
 " highlights the horizontal line in which the cursor is.
+set incsearch
+" starts searching for the word when you enter the first character of the string
 set hlsearch
-" highlights all the words which match your regex.
+" setting searchlist
+set wildmenu
+" setting wildmenu
 set list
 " it is used to define invisible characters or characters which represent your tabs, spaces, trailing-lines,etc.
 set autoindent
@@ -162,11 +170,23 @@ highlight SpecialKey ctermfg=240 cterm=none
 highlight ErrorMsg ctermfg=231 ctermbg=196 cterm=none
 " This highlight group is to set color for error messages.
 highlight Directory ctermfg=21 cterm=bold
+" sets color for directories
 highlight Search ctermfg=196 ctermbg=51 cterm=none
+" sets color for search group
+highlight IncSearch ctermfg=196 ctermbg=51 cterm=none
+" sets color of incsearch
+highlight WarningMsg ctermfg=231 ctermbg=196 cterm=none
+" sets color of warning messages
 highlight Visual ctermbg=59 cterm=none
-highlight WildMenu ctermfg=231 cterm=none
+" sets color for visual mode
+highlight WildMenu ctermfg=231 ctermbg=46
+" sets color for wildmenu
 highlight CursorLine ctermbg=238 cterm=bold
 " This hightlight group is to set the color for highlighting horizontal line in which you cursor lies.
+highlight StatusLine ctermfg=21 ctermbg=226 cterm=bold
+" sets color for statusline
+highlight StatusLineNC ctermfg=21 ctermbg=226 cterm=bold
+" sets color for statusline of other tabs
 highlight CursorColumn ctermbg=238 cterm=bold
 " This highlight group is to set the color for highlighting vertical line in which your cursor lies.
 highlight LineNr cterm=bold ctermbg=226 ctermfg=21
@@ -177,7 +197,9 @@ highlight ExtraText ctermfg=196 cterm=none
 " This highlight group is created by me to color all the special characters.
 " Pmenu
 highlight Pmenu ctermfg=16 ctermbg=46 cterm=bold
+" sets color for panelmenu
 highlight PmenuSel ctermfg=16 ctermbg=21 cterm=bold
+" sets color for panel menu selection
 " Invisible Characters
 set listchars=eol:¬,tab:\|\·,trail:~,extends:>,precedes:<
 " These are the characters which will replace your invisible characters like tabs spaces. Also if you want to represent all the spaces in your code with some character, you can replace this line with this code 'set listchars=eol:¬,tab:\|\·,trail:~,extends:>,precedes:<,space:~' and replace the space with whatever character you want.
