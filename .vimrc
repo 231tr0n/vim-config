@@ -61,7 +61,7 @@ nnoremap <Space><Space><Space> :set et\|retab<CR>
 " Pressing space three times in normal mode makes this command appear in command mode where you just have to change the number of spaces in this command to the spaces which you represent for each tab and hit enter
 nnoremap fr :1,$s/    /\t/g
 " search regex for special characters also
-nnoremap rf :%s///g
+nnoremap rf :line_no_from,line_no_to%s///g
 " search regex for strings only
 " Filetype maps
 :au BufEnter,BufNew,BufNewFile *.py inoremap :<CR> :<CR><Tab>
