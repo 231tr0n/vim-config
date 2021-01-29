@@ -167,6 +167,7 @@ highlight Todo ctermfg=51 ctermbg=196 cterm=none
 highlight Cursor ctermfg=196 ctermbg=46 cterm=none
 " This highlight group is to set color for your cursor altough the cursor color has to be set in your preferences tab in the terminal to change.
 highlight SpecialKey ctermfg=240 cterm=none
+" sets color for special keys
 highlight ErrorMsg ctermfg=231 ctermbg=196 cterm=none
 " This highlight group is to set color for error messages.
 highlight Directory ctermfg=21 cterm=bold
