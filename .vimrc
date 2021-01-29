@@ -69,7 +69,7 @@ nnoremap rf :%s///g
 " autoclose html tags mapping
 :set omnifunc=htmlcomplete#CompleteTags
 " This calls the builtin function to complete html tags.
-:au FileType html,xml,xsl inoremap <C-_> <Right><Enter></<C-x><C-o><Esc>O<Tab>|nnoremap <C-_> a<C-_>|inoremap <C-_><C-_> <Right></<C-x><C-o>
+:au FileType html,xml,xsl inoremap <C-_> <Right><Enter></<C-x><C-o><Esc>O<Tab>|inoremap <C-_><C-_> <Right></<C-x><C-o>
 " If you type a html opening tag like the following <html>| or <html|> with the cursor represented by | and if the cursor is in those positions and if you hit <ctrl + _>, then it will get printed like this:- <html> \n \t | \n </html> where | represents the cursor.
 " New Tabs config
 nnoremap <Tab>c :tabnew 
