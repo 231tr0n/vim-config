@@ -115,6 +115,8 @@ set autoindent
 " puts your cursor on the same indentation level as the before line
 set tabstop=4
 " sets tabspace
+set shiftwidth=4
+" sets the width to shift for the selected lines or line of text
 highlight clear
 " clears all the highlighting set before.
 " [See this link read all the matter under naming conventions category to know about highlight groups and which part of the code do they highlight](http://vimdoc.sourceforge.net/htmldoc/syntax.html)
