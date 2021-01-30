@@ -66,6 +66,8 @@ nnoremap rf :line_no_from,line_no_to%s///g
 " Filetype maps
 :au BufEnter,BufNew,BufNewFile *.py inoremap :<CR> :<CR><Tab>
 " This is a auto-command which gets executed for python files automatically. If you press :\n, it will get printed like this:- :\n\t| where | represents the cursor.
+:au BufEnter,BufNew,BufNewFile *.php inoremap <?<CR> <?php<CR>?><Esc><C-o><Tab>
+" This is a auto-command which gets executed for php files automatically. If you press <?\n, it will get printed like this:- <?php \n \t | \n ?> where | represents the cursor.
 " autoclose html tags mapping
 :set omnifunc=htmlcomplete#CompleteTags
 " This calls the builtin function to complete html tags.
