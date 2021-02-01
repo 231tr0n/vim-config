@@ -188,13 +188,13 @@ highlight WildMenu ctermfg=231 ctermbg=46
 " sets color for wildmenu
 highlight CursorLine ctermbg=238 cterm=bold
 " This hightlight group is to set the color for highlighting horizontal line in which you cursor lies.
-highlight StatusLine ctermfg=21 ctermbg=226 cterm=bold
+highlight StatusLine ctermfg=21 ctermbg=6 cterm=bold
 " sets color for statusline
-highlight StatusLineNC ctermfg=21 ctermbg=226 cterm=bold
+highlight StatusLineNC ctermfg=21 ctermbg=6 cterm=bold
 " sets color for statusline of other tabs
 highlight CursorColumn ctermbg=238 cterm=bold
 " This highlight group is to set the color for highlighting vertical line in which your cursor lies.
-highlight LineNr cterm=bold ctermbg=226 ctermfg=21
+highlight LineNr cterm=bold ctermbg=6 ctermfg=21
 " This highlight group is to set the color of linenumbering.
 highlight NonText ctermfg=240 cterm=none
 " This highlight group is for setting colors to nontext or invisible characters which replace your tabs, spaces, trailing spaces,etc.
