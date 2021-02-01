@@ -64,6 +64,8 @@ nnoremap fr :1,$s/    /\t/g
 nnoremap rf :line_no_from,line_no_to%s///g
 " search regex for strings only
 " Filetype maps
+:au BufEnter,BufNew,BufNewFile *.go inoremap :<Space> := |inoremap :: :
+" This is a auto-command which gets executed for golang files automatically. If you press :\s, it will get printed like this :=\s| and if you press ::, it will get printed like this :| where | is your cursor.
 :au BufEnter,BufNew,BufNewFile *.py inoremap :<CR> :<CR><Tab>
 " This is a auto-command which gets executed for python files automatically. If you press :\n, it will get printed like this:- :\n\t| where | represents the cursor.
 :au BufEnter,BufNew,BufNewFile *.php inoremap <?<CR> <?php<CR>?><Esc><C-o><Tab>|inoremap <?<Space> <?
