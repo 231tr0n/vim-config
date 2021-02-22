@@ -71,7 +71,7 @@ nnoremap rf :line_no_from,line_no_to%s///g
 " autoclose html tags mapping
 :set omnifunc=htmlcomplete#CompleteTags
 " This calls the builtin function to complete html tags.
-:au FileType html,xml,xsl inoremap <C-_> <Right><Enter></<C-x><C-o><Esc>O<Tab>|inoremap <C-_><C-_> <Right></<C-x><C-o>|inoremap < <><Left>|inoremap </ </><Left>|inoremap <% <%   %><Left><Left><Left><Left>
+:au FileType html,xml,xsl inoremap <C-_> <Right><Enter></<C-x><C-o><Esc>O<Tab>|inoremap <C-_><C-_> <Right></<C-x><C-o>|inoremap < <><Left>|inoremap </ </><Left>|inoremap <% <%  %><Left><Left><Left>|inoremap <%=  %><Left><Left><Left>
 " If you press <, then the it will get printed like this:- `|` where | represents the cursor.
 " If you press </, then the it will get printed like this:- </|> where | represents the cursor.
 " If you press <%, then it will get printed like this:- <%|%> where | represents the cursor.
