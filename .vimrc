@@ -49,6 +49,8 @@ inoremap <> <>
 " If you press <>, then it will get printed like this:- <>| where | represents the cursor.
 inoremap </> </>
 " If you press </>, then it will get printed like this:- </>| where | represents the cursor.
+inoremap <%<Space> <%
+" If you press <%\n, then it will get printed like this:- <%| where | represents the cursor.
 " Mappings for tabs and space conversions
 " To convert spaces to tabs you press tab three times and hit enter and to convert tabs to spaces, you press space three times and hit enter.
 nnoremap <Tab><Tab><Tab> :set noet\|retab!<CR>
