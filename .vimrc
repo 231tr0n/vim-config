@@ -19,10 +19,6 @@ inoremap ' ''<Left>
 " If you press ', then the it will get printed like this:- '|' where | represents the cursor.
 inoremap ` ``<Left>
 " If you press `, then the it will get printed like this:- `|` where | represents the cursor.
-inoremap < <><Left>
-" If you press <, then the it will get printed like this:- `|` where | represents the cursor.
-inoremap </ </><Left>
-" If you press </, then the it will get printed like this:- </|> where | represents the cursor.
 inoremap {<Space> {
 " If you press {\s, then the it will get printed like this:- { where | represents the cursor.
 inoremap (<Space> (
@@ -73,7 +69,10 @@ nnoremap rf :line_no_from,line_no_to%s///g
 " autoclose html tags mapping
 :set omnifunc=htmlcomplete#CompleteTags
 " This calls the builtin function to complete html tags.
-:au FileType html,xml,xsl inoremap <C-_> <Right><Enter></<C-x><C-o><Esc>O<Tab>|inoremap <C-_><C-_> <Right></<C-x><C-o>
+:au FileType html,xml,xsl inoremap <C-_> <Right><Enter></<C-x><C-o><Esc>O<Tab>|inoremap <C-_><C-_> <Right></<C-x><C-o>|inoremap < <><Left>|inoremap </ </><Left>|inoremap <% <%%><Left><Left>
+" If you press <, then the it will get printed like this:- `|` where | represents the cursor.
+" If you press </, then the it will get printed like this:- </|> where | represents the cursor.
+" If you press <%, then it will get printed like this:- <%|%> where | represents the cursor.
 " If you type a html opening tag like the following <html>| or <html|> with the cursor represented by | and if the cursor is in those positions and if you hit <ctrl + _>, then it will get printed like this:- <html> \n \t | \n </html> where | represents the cursor.
 " New Tabs config
 nnoremap <Tab>c :tabnew 
@@ -88,7 +87,8 @@ nnoremap <Tab><left> :tabp<cr>
 " To go to the previous tab
 nnoremap <Tab><right> :tabn<cr>
 " To go to the next tab
-
+au BufNewFile,BufNew,BufRead *.ejs set filetype=html
+" Used to set html hightlighting for ejs files.
 
 " colorscheme and config
 set background=dark
