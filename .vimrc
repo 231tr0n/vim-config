@@ -220,7 +220,7 @@ highlight link CursorLine Cursor
 highlight link lCursor Cursor
 " Keywords to be added to the ExtraText highlight group
 :match ExtraText /[(){}<>.~,?/\|:;!@#$%^&*\-+\[\]="'`]/
-
+:2match Number /[0123456789]/
 
 " Special commands and Characters for copy/paste :- "¬·"
 " source ~/.vim/plugins/file_name.txt
